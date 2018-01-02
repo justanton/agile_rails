@@ -15,11 +15,16 @@
     </div>
     <div id="columns">
       <div id="side">
+        <div id="cart">
+          <% if @cart %>
+            <%= render @cart %>
+          <% end %>
+        </div>
         <ul>
-          <%= link_to "Home", store_index_path %>
-          <li><a href="http://www..../faq">Questions</a></li>
-          <li><a href="http://www..../news">News</a></li>
-          <li><a href="http://www..../contact">Contact</a></li>
+          <li><%= link_to "Home", store_index_path %></li>
+          <li><%= link_to "Questions", store_index_path %></li>
+          <li><%= link_to "News", store_index_path %></li>
+          <li><%= link_to "Contact", store_index_path %></li>
         </ul>
       </div>
       <div id="main">
