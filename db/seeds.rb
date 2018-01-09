@@ -53,3 +53,5 @@ Product.create!(title: 'Ruby Performance Optimization',
       </p>},
   image_url: 'adrpo.jpg',
   price: 46.00)
+
+User.create!( name: "Batman", password: "robin" )
